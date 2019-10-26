@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FriendsInfoModelStoreContainer" CdmEntityContainer="FriendsInfoEntities">
+    <EntitySetMapping Name="FriendInfoes">
+      <EntityTypeMapping TypeName="FriendsInfoModel.FriendInfo">
+        <MappingFragment StoreEntitySet="FriendInfo">
+          <ScalarProperty Name="InfoID" ColumnName="InfoID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="RelationshipStatus" ColumnName="RelationshipStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GetIPMethodCalls">
+      <EntityTypeMapping TypeName="FriendsInfoModel.GetIPMethodCall">
+        <MappingFragment StoreEntitySet="GetIPMethodCall">
+          <ScalarProperty Name="GetIPID" ColumnName="GetIPID" />
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+          <ScalarProperty Name="CallerIP" ColumnName="CallerIP" />
+          <ScalarProperty Name="CallingTime" ColumnName="CallingTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
