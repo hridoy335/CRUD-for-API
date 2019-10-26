@@ -169,6 +169,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\FriendList\Index.cshtml" />
+    <Content Include="Views\FriendList\AddFriend.cshtml" />
+    <Content Include="Views\FriendList\DeleteFriend.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

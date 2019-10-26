@@ -7,12 +7,12 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "AddFriend")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.InfoID)
+            @*@Html.HiddenFor(model => model.InfoID.to)*@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -35,7 +35,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.InfoID)
+            @Html.HiddenFor(modelItem => item.InfoID)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Name)
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.RelationshipStatus)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Edit", "AddFriend", new {  id=item.InfoID }) |
             @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Delete", "DeleteFriend", new {  id=item.InfoID  })
         </td>
     </tr>
 }
